@@ -1,8 +1,105 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout/layout.html.twig' %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
+    <script type="text/javascript" src="{{ asset('js/home.js') }}"></script>
+{% endblock %}
 {% block body %}
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages: ["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
 
-    <p>{{ info.getCountry }}</p>
+        function drawChart() {
+            let data = google.visualization.arrayToDataTable([
+                ['number', 'cases'],
+                ['Deaths', 1346693],
+                ['Active', 56111415 - 39101709 - 1346693],
+                ['Recovered', 39101709],
+            ]);
+
+            let options = {
+                pieHole: 0.5,
+                is3D: false,
+                slices: {
+                    0: {color: '#050505'},
+                    1: {color: '#ee4b6a'},
+                    2: {color: '#2bed58'}
+                },
+                height: 300,
+                width: 600,
+                pieStartAngle: 50,
+                backgroundColor: 'transparent',
+
+            };
+
+            let chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+    <div class="container">
+        <div class="stats">
+            <div class="general">
+                <h3>Total cases</h3>
+                <h2>{{ info[0].getCases|number_format(0,',') }}</h2>
+                <h3>Total deaths</h3>
+                <h2 class="general-deaths">{{ info[0].getDeaths|number_format(0,',') }}</h2>
+                <h3>Recovered</h3>
+                <h2 class="general-recovered">{{ info[0].getRecovered|number_format(0,',') }}</h2>
+
+            </div>
+            <div class="today">
+                <h3>Today cases</h3>
+                <h2>{{ info[0].getTodayCases|number_format(0,',') }}</h2>
+                <h3>Today deaths</h3>
+                <h2 class="general-deaths">{{ info[0].getTodayDeaths|number_format(0,',') }}</h2>
+            </div>
+            <div class="extra">
+                <h3>Active</h3>
+                <h2>{{ info[0].getActive|number_format(0,',') }}</h2>
+                <h3>Critical</h3>
+                <h2 class="general-deaths">{{ info[0].getCritical|number_format(0,',') }}</h2>
+            </div>
+        </div>
+        <div class="chart-container">
+            <div id="piechart_3d" class="chart-item"></div>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Total Cases</th>
+                <th>Today Cases</th>
+                <th>Total Deaths</th>
+                <th>Today Deaths</th>
+                <th>Recovered</th>
+                <th>Active Cases</th>
+                <th>Critical</th>
+                <th>Cases Per one Million</th>
+                <th>Deaths Per one Million</th>
+                <th>Total Tests</th>
+                <th>Tests Per One Million</th>
+            </tr>
+            {% for country in info %}
+                <tr>
+                    <td>{{ country.getCountry }}</td>
+                    <td>{{ country.getCases|number_format(0,',') }}</td>
+                    <td class="today-cases">+{{ country.getTodayCases|number_format(0,',') }}</td>
+                    <td>{{ country.getDeaths|number_format(0,',') }}</td>
+                    <td class="today-deaths">+{{ country.getTodayDeaths|number_format(0,',') }}</td>
+                    <td class="recovered">{{ country.getRecovered|number_format(0,',') }}</td>
+                    <td>{{ country.getActive|number_format(0,',') }}</td>
+                    <td>{{ country.getCritical|number_format(0,',') }}</td>
+                    <td>{{ country.getCasesPerOneMillion|number_format(0,',') }}</td>
+                    <td>{{ country.getDeathsPerOneMillion|number_format(0,',') }}</td>
+                    <td>{{ country.getTotalTests|number_format(0,',') }}</td>
+                    <td>{{ country.getTestsPerOneMillion|number_format(0,',') }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
 
 
 {% endblock %}

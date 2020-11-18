@@ -12,6 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c124a879-6295-4f9a-a103-ff342997cc5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Country.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/CountryHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/CountryHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,14 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,11 +153,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/Service" />
       <recent name="$PROJECT_DIR$/public" />
@@ -157,7 +173,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605611797212</updated>
-      <workItem from="1605611799551" duration="16344000" />
+      <workItem from="1605611799551" duration="40377000" />
     </task>
     <servers />
   </component>
@@ -176,14 +192,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="486" y="25" key="#PHP" timestamp="1605715391599">
+      <screen x="0" y="25" width="1440" height="818" />
+    </state>
+    <state x="486" y="25" key="#PHP/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605715391599" />
     <state x="184" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605630702934">
       <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state x="184" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605630702934" />
-    <state x="507" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1605634269127">
+    <state x="507" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1605715393043">
       <screen x="0" y="25" width="1440" height="818" />
     </state>
-    <state x="507" y="147" key="#com.intellij.ide.util.MemberChooser/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605634269127" />
+    <state x="507" y="147" key="#com.intellij.ide.util.MemberChooser/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605715393043" />
     <state x="441" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605625144260">
       <screen x="0" y="25" width="1440" height="818" />
     </state>
@@ -192,6 +212,10 @@
       <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state x="422" y="164" key="NewPhpClassDialog/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605634847490" />
+    <state x="-1197" y="25" width="968" height="799" key="dock-window-1" timestamp="1605717707583">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1197" y="25" width="968" height="799" key="dock-window-1/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605717707583" />
     <state x="564" y="211" key="refactoring.ChangeSignatureDialog" timestamp="1605624104855">
       <screen x="0" y="25" width="1440" height="818" />
     </state>

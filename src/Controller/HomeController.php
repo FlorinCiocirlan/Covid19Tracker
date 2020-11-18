@@ -21,11 +21,13 @@
 
         public function index(ApiRequest $apiRequest): Response {
             $mapper = new CountryHelper();
-            $info = $apiRequest->fetchByName('Romania');
-            $country = $mapper->getCountryObject($info);
+            $countries = $mapper->getCountryList($apiRequest->fetchAll());
+
+//            $info = $apiRequest->fetchByName('Romania');
+//            $country = $mapper->getCountryObject($info);
 
 
-            return $this->render('home/home.html.twig',['info'=>$country]);
+            return $this->render('home/home.html.twig',['info'=>$countries]);
         }
 
 

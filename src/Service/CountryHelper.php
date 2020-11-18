@@ -18,4 +18,11 @@
             return $this->mapObject($apiValues);
         }
 
+        public function getCountryList(array $countries) : array {
+            foreach ($countries as &$country) {
+                $country = $this->getCountryObject($country);
+            }
+            return $countries;
+        }
+
     }
