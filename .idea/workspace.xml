@@ -11,13 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c124a879-6295-4f9a-a103-ff342997cc5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/CountryHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/CountryHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/header.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,9 @@
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -165,6 +169,12 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -173,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605611797212</updated>
-      <workItem from="1605611799551" duration="40377000" />
+      <workItem from="1605611799551" duration="44919000" />
     </task>
     <servers />
   </component>
@@ -208,14 +218,19 @@
       <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state x="441" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605625144260" />
-    <state x="422" y="164" key="NewPhpClassDialog" timestamp="1605634847490">
+    <state x="571" y="350" key="ComposerInitDialogKey" timestamp="1605794435222">
       <screen x="0" y="25" width="1440" height="818" />
     </state>
-    <state x="422" y="164" key="NewPhpClassDialog/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605634847490" />
-    <state x="-1197" y="25" width="968" height="799" key="dock-window-1" timestamp="1605717707583">
-      <screen x="-1920" y="25" width="1920" height="1055" />
+    <state x="571" y="350" key="ComposerInitDialogKey/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605794435222" />
+    <state x="422" y="164" key="NewPhpClassDialog" timestamp="1605794401327">
+      <screen x="0" y="25" width="1440" height="818" />
+    </state>
+    <state x="422" y="164" key="NewPhpClassDialog/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605794401327" />
+    <state x="243" y="25" width="968" height="799" key="dock-window-1" timestamp="1605780780353">
+      <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state x="-1197" y="25" width="968" height="799" key="dock-window-1/0.25.1440.818/-1920.25.1920.1055@0.25.1440.818" timestamp="1605717707583" />
+    <state x="243" y="25" width="968" height="799" key="dock-window-1/0.25.1440.818@0.25.1440.818" timestamp="1605780780353" />
     <state x="564" y="211" key="refactoring.ChangeSignatureDialog" timestamp="1605624104855">
       <screen x="0" y="25" width="1440" height="818" />
     </state>

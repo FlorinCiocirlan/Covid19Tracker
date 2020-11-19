@@ -16,16 +16,12 @@
         /**
          * @Route ("/", name="app_home")
          * @param ApiRequest $apiRequest
+         * @param CountryHelper $mapper
          * @return Response
          */
 
-        public function index(ApiRequest $apiRequest): Response {
-            $mapper = new CountryHelper();
+        public function index(ApiRequest $apiRequest, CountryHelper $mapper): Response {
             $countries = $mapper->getCountryList($apiRequest->fetchAll());
-
-//            $info = $apiRequest->fetchByName('Romania');
-//            $country = $mapper->getCountryObject($info);
-
 
             return $this->render('home/home.html.twig',['info'=>$countries]);
         }

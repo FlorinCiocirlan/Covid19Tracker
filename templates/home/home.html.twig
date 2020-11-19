@@ -5,6 +5,7 @@
     <script type="text/javascript" src="{{ asset('js/home.js') }}"></script>
 {% endblock %}
 {% block body %}
+    <div class="title">Coronavirus Global Info</div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load("current", {packages: ["corechart"]});
@@ -67,6 +68,10 @@
     </div>
 
     <div class="table-container">
+    <div>
+        <label for="searchInput"></label><input onkeyup="myFunction()" type="text" name="input" id="searchInput"
+                                                placeholder="Search for countries">
+    </div>
         <table class="table">
             <tr>
                 <th>Name</th>

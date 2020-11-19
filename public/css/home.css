@@ -1,4 +1,3 @@
-
 /*.chart-container {*/
 /*    margin-top: 15px;*/
 /*    width: 100%;*/
@@ -17,6 +16,7 @@
 }
 
 body {
+    padding: 0;
     background-color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
@@ -24,7 +24,6 @@ body {
 }
 
 .container {
-    background-color: #f3b5bf;
     padding: 15px;
     margin-top: 15px;
     width: 100%;
@@ -44,7 +43,7 @@ body {
     justify-content: center;
 }
 
-.stats{
+.stats {
     transform: translateY(-15px);
     margin-top: 0;
     display: flex;
@@ -53,29 +52,30 @@ body {
     border-radius: 5px;
 }
 
-.stats > div{
+.stats > div {
     padding: 50px;
 }
 
 
-
-
-.stats > div >h3 {
+.stats > div > h3 {
     margin: 0;
     border: 0;
     text-align: center;
     color: black;
     font-weight: lighter;
 }
-.stats > div >h2 {
+
+.stats > div > h2 {
     text-align: center;
     color: darkgray;
     font-weight: bold;
     font-size: 30px;
 }
 
-.table-container{
+.table-container {
+    padding: 1.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -97,7 +97,7 @@ td {
 }
 
 th {
-    padding: 15px;
+    padding: 5px;
     font-weight: lighter;
     position: sticky;
     top: 0;
@@ -132,5 +132,20 @@ th {
     color: white;
 }
 
+
+#searchInput {
+    margin-bottom: 1.25em;
+    border: 1px solid #cac4c4;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+}
+
+.title {
+    margin: 1.25em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
 
 
