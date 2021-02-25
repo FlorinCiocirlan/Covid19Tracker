@@ -35,21 +35,21 @@
         }
 
         public function fetchGeneralInfo(){
-            $endpoint = 'https://coronavirus-19-api.herokuapp.com/all';
+            $endpoint = $_ENV['COVID_API'].'/all';
             $parameter = '';
 
             return $this->fetch($endpoint,$parameter);
         }
 
         public function fetchAll(){
-            $endpoint = 'https://coronavirus-19-api.herokuapp.com/countries';
+            $endpoint = $_ENV['COVID_API'].'/countries';
             $parameter = '';
 
             return $this->fetch($endpoint,$parameter);
         }
 
         public function fetchByName(string $name){
-            $endpoint = 'https://coronavirus-19-api.herokuapp.com/countries';
+            $endpoint = $_ENV['COVID_API'].'/countries';
 
             return $this->fetch($endpoint,$name);
         }

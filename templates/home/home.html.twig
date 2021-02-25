@@ -8,15 +8,20 @@
     <div class="title">Coronavirus Global Info</div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+
         google.charts.load("current", {packages: ["corechart"]});
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
+            let deaths = `{{ info[0].getDeaths }}`;
+            let recovered = `{{ info[0].getRecovered }}`;
+            let active = parseInt(`{{ info[0].getCases }}`) - parseInt(`{{ info[0].getDeaths }}`) - parseInt(`{{ info[0].getRecovered }}`);
+            console.log(deaths,recovered);
             let data = google.visualization.arrayToDataTable([
                 ['number', 'cases'],
-                ['Deaths', 1346693],
-                ['Active', 56111415 - 39101709 - 1346693],
-                ['Recovered', 39101709],
+                ['Deaths', parseInt(deaths)],
+                ['Active', active],
+                ['Recovered', parseInt(recovered)],
             ]);
 
             let options = {
@@ -27,8 +32,6 @@
                     1: {color: '#ee4b6a'},
                     2: {color: '#2bed58'}
                 },
-                height: 300,
-                width: 600,
                 pieStartAngle: 50,
                 backgroundColor: 'transparent',
 
@@ -65,7 +68,9 @@
         <div class="chart-container">
             <div id="piechart_3d" class="chart-item"></div>
         </div>
+
     </div>
+
 
     <div class="table-container">
     <div>
